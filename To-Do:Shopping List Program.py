@@ -15,6 +15,7 @@ def output_items():
             for item in file:
                 print(item.strip())
             print("-----------------------------")
+            print("Time is written in GMT")
     except FileNotFoundError:
         with open("shopping.txt", "w") as file:
             pass  # Create an empty file if it doesn't exist
