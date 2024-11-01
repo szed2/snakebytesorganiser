@@ -19,7 +19,7 @@ def output_items():
             for item in file:
                 print(item.strip())
             print("-----------------------------")
-            print("Time is written in GMT if run on Trinket/Time is written in GMT+8 if run on VSCode2")
+            print("Time is written in GMT")
     except FileNotFoundError:
         with open("shopping.txt", "w") as file:
             pass  # Create an empty file if it doesn't exist
@@ -99,3 +99,26 @@ while True:
     print("1. Add an item")
     print("2. Output the list")
     print("3. Sort the list alphabetically")
+<<<<<<< HEAD:To-Do_Shopping List Program.py
+=======
+    print("4. Sort the list by date")
+    print("5. Tick off an item")
+    print("6. Quit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        add_item()
+    elif choice == "2":
+        output_items()
+    elif choice == "3":
+        sort_items_alphabetically()
+    elif choice == "4":
+        sort_items_by_date()
+    elif choice == "5":
+        tick_item()
+    elif choice == "6":
+        break
+    else:
+        print("Invalid choice. Please try again.")
+>>>>>>> parent of b3c2d56 (Update FINAL for to do):To-Do:Shopping List Program.py
