@@ -15,7 +15,7 @@ def output_items():
             for item in file:
                 print(item.strip())
             print("-----------------------------")
-            print("Time is written in GMT")
+            print("Time is written in GMT if run on Trinket/Time is written in GMT+8 if run on VSCode2")
     except FileNotFoundError:
         with open("shopping.txt", "w") as file:
             pass  # Create an empty file if it doesn't exist
@@ -79,4 +79,4 @@ while True:
     elif choice == "6":
         break
     else:
-        print("Invalid choice. Please try again.")
+        print("Invalid input. Please try again.")
